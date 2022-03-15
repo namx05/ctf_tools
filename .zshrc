@@ -314,5 +314,7 @@ gobusterscan(){
 
 #ssti
 ssti(){
+    echo "ssti <url> <vuln_param> <command_to_execute>
     python /opt/ssti/tplmap -u $1 -d $2 --os-cmd "$3"
 }
+
