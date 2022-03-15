@@ -312,3 +312,7 @@ gobusterscan(){
     gobuster dir -u http://$IP /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.txt -x php,html,txt
 }
 
+#ssti
+ssti(){
+    python /opt/ssti/tplmap -u $1 -d $2 --os-cmd "$3"
+}
