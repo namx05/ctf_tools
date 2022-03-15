@@ -304,7 +304,7 @@ rust(){
 
 #feroxbuster
 feroscan(){
-    sudo feroxbuster -a $IP -o ferobuster.txt
+    feroxbuster -a $IP -o ferobuster.txt
 }
 
 #gobuster 
