@@ -299,7 +299,7 @@ nmapscan(){
 
 #rustscan
 rust(){
-    sudo rustscan -a $IP --ulimit 2500 | rustscan.txt
+    sudo rustscan -a $IP --ulimit 2500 | tee rustscan.txt
 }
 
 #feroxbuster
