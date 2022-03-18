@@ -252,6 +252,9 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 
+echo "Welcome!!"
+figlet "Naman: )"
+
 #Starts python server with default port i.e. 80
 up(){
     python3 -m http.server
