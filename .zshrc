@@ -59,7 +59,7 @@ feroscan(){
 
 #gobuster 
 gobusterscan(){
-    gobuster dir -u http://$IP /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.txt -x php,html,txt
+    gobuster dir -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.txt -x php,html,txt
 }
 
 #ssti
