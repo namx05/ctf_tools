@@ -15,9 +15,10 @@ rustscan -a $IP --ulimit 5000\n
 nmap -Pn $IP
 nmap -Pn -T5 --min-rate 2500 -sC -sV -oN nmap $IP
 nmap -sC -sV -p -oN nmap $IP -Pn
+sudo nmap -sSCV -p- -Pn -oN nmap $IP
 --------''')
 print('''----Dir----
-feroxbuster -u $IP -o ferobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o ferobuster
+feroxbuster -u $IP -o feroxbuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o ferobuster 
 gobuster dir -u $IP -w /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt -x php,html,txt,xml -o gobuster
 --------\n''')
 
@@ -29,6 +30,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt <hash file>
 
 print('''----SQL Server----
 mysql -h 10.10.180.96 -u root -p 
+mysql -h localhost -u root -p 
 --------\n''')
 
 print('''----sqlmap----
