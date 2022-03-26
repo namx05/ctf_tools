@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 
 echo "Welcome!!"
 figlet "Naman: )"
->>>>>>> 97db97a6141daf7bc4a5f511fa51d39b400dfdb4
 
 #Starts python server with default port i.e. 80
 up $1(){
