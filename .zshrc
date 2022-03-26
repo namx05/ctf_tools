@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+
+echo "Welcome!!"
+figlet "Naman: )"
+>>>>>>> 97db97a6141daf7bc4a5f511fa51d39b400dfdb4
 
 #Starts python server with default port i.e. 80
-up(){
-    python3 -m http.server
+up $1(){
+    python3 -m http.server $1
 }
 
 #Open butp-suite
@@ -56,7 +62,7 @@ feroscan(){
 
 #gobuster 
 gobusterscan(){
-    gobuster dir -u http://$IP /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.txt -x php,html,txt
+    gobuster dir -u http://$IP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.txt -x php,html,txt
 }
 
 #ssti
