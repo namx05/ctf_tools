@@ -17,6 +17,13 @@ nmap -Pn -T5 --min-rate 2500 -sC -sV -oN nmap $IP
 nmap -sC -sV -p -oN nmap $IP -Pn
 sudo nmap -sSCV -p- -Pn -oN nmap $IP
 --------''')
+
+print('''
+wpscan --url $IP -e u,cb,vt,vp -o wpscan.txt                                                                 4 ⨯
+wpscan --url $IP -U users -P /usr/share/wordlists/rockyou.txt
+
+''')
+
 print('''----Dir----
 feroxbuster -u $IP -o feroxbuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o ferobuster 
 gobuster dir -u $IP -w /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt -x php,html,txt,xml -o gobuster
