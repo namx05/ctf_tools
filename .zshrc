@@ -5,7 +5,7 @@ up $1(){
 
 #Starts ftp server
 upftp $1(){
-	python3 ~/ctf/ftp.py $1
+	python3 ~/ctf/scripts/ftp.py $1
 }
 
 #Open butp-suite
@@ -25,17 +25,17 @@ listner $1(){
 
 #python pty
 pty(){
-    cat /home/naman/ctf/ptyshell
+    cat /home/naman/ctf/scripts/ptyshell
 }
 
 #command cheatsheet
 alies(){
-    python3 /home/naman/ctf/alias.py
+    python3 /home/naman/ctf/scripts/alias.py
 }
 
 #tun0 ip
 myip(){
-    cat /home/naman/ctf/ip.sh | bash
+    cat /home/naman/ctf/scripts/ip.sh | bash
 }
 
 #pwnkit remediation
