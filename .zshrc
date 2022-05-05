@@ -1,10 +1,11 @@
-
-echo "Welcome!!"
-figlet "Naman: )"
-
 #Starts python server with default port i.e. 80
 up $1(){
     python3 -m http.server $1
+}
+
+#Starts ftp server
+upftp $1(){
+	python3 ~/ctf/ftp.py $1
 }
 
 #Open butp-suite
