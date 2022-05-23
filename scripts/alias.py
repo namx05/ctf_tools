@@ -27,7 +27,8 @@ john --wordlist=<wordlist file> <hash file>
 john --wordlist=/usr/share/wordlists/rockyou.txt <hash file>
 --------\n''')
 
-print('''----SQL Server----
+print('''----SQL----
+sqlmap -r sql.req --dbs --tables --dump
 mysql -h 10.10.180.96 -u root -p 
 --------\n''')
 
